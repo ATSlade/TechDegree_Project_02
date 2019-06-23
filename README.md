@@ -8,6 +8,6 @@ Notes:
 
 Attempting "Exceeds Expectations"
 * Skills section added
-* New background color (header)
-* Additional styling (borders (on profile pic and projects) and hover states (on nav links))
+* Background color added (header)
+* Additional styling (borders on profile pic and project imgs) and hover states (on nav links)
 * <nav> elements used
