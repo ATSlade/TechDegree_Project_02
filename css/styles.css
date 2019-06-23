@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:400,900&display=swap");
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box; /* NEED TO RESEARCH THIS!!! */
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	padding-left: 2px;
+	padding-right: 2px;
+	min-width: 100%;
+	height: 100%;
+}
+
+p {
+	font-size: .95em;
+}
+
+h2, a {
+	color: #093a58;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b066f5;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 2em;
+	margin-top: -8px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+/* ---- Layout Containers ---- */
+
+.container-top, main-header, .container-bottom {
+	background-color: #f0f0f0;	
+}
+
+.header-nav {
+	background-color: #f3ebfa;
+	padding-bottom: 15px;
+}
+
+.main-header {
+	margin-bottom: 15px;	
+}
+
+.banner {
+	padding: 0 10px 20px;
+}
+
+.pic-bg {
+	margin: 0 auto;
+	padding: 10px 5px 5px 5px;
+	max-width: 275px;
+	width: 50%;
+}
+
+.container-main {
+	margin: 0 auto;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+}
+
+.skills {
+	padding: 15px 100px;
+	text-align: center;
+}
+
+.skill-list {
+	font-size: 1.3em;
+}
+
+.container-project {
+	margin: 0 auto;
+	max-width: 450px;
+}
+
+.banner, .container-contact {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.container-contact {
+	padding: 0 45px;
+}
+
+.container-footer {
+	margin-top: 50px;
+	padding: 0 10px;
+}
+
+.footer-name {
+	font-size: 1.3em;
+	float: left;
+	margin: -5px 0;
+}
+
+.footer-top {
+	float: right;
+	font-size: 1em;
+	margin-top: 0;
+}
+
+/* ---- Page Elements ---- */
+
+.profile-image, .profile-pic {
+	border: 1px solid #460286;
+}
+
+.profile-image {
+	border-radius: 50%;
+}
+
+.title {
+	font-size: 1.3em;
+	padding-top: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2.project-name {
+	margin: 15px 0 10px;
+	text-align: center;
+}
+
+.project-narr {
+	padding: 0 15px;
+	text-align: center;
+}
+
+.break {
+	border: 0.5px solid #c3c3c3;
+}
+
+.footer-name {
+	float: left;
+	margin: 19px 0 19px 15px;
+}
+
+.footer-to-top {
+	float: right;
+	margin: 19px 15px 19px 0;
+}
+
+.footer-nav {
+	display: none;
+}
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/*======================================
+			Media Queries
+=======================================*/
+
+@media screen and (min-width: 320px) {
+
+	.header-nav-list, .header-nav-list li {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.header-nav-list a {
+		background-color: #fff;
+		display: inline-block;
+		margin-bottom: 10px;
+		padding: 10px 0;
+		font-weight: 800;
+		text-transform: uppercase;
+		width: 90%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.header-nav-list li, .header-nav-list li a  {
+		display: inline;
+	}
+
+	.header-nav-list li a {
+		background-color: inherit;
+		font-size: 1.2em;
+		padding: 15px 30px;
+	}
+
+	.footer-to-top {
+		display: none;
+	}	
+
+	.footer-nav {
+		display: contents;
+	}
+
+	.footer-list {
+		float: right;
+		margin-top: 16px;
+		padding-bottom: 0;
+	}
+
+	.footer-list li {   
+		display: inline-block;
+		font-size: 1.1em;
+		font-weight: 600;
+		padding: 5px 10px 0;
+		text-transform: uppercase;
+		text-align: right;
+	}
+
+/* ---- Header changes ---- */	
+
+	.banner {
+		display: block;
+		margin-top: 35px;
+		padding: 0 30px 60px 30px;
+	}
+
+	.about-me {
+		float: left;
+		font-size: 1.2em;
+		padding: 30px 20px 0;
+		width: 50%;
+	}
+
+	.pic-bg {
+		float: right;
+		max-width: 400px;
+	}	
+
+	.container-project {
+		float: left;
+		padding: 0 10px;
+		width: 50%;
+	}
+
+	.container-contact {
+		margin: 0 auto;
+		padding: 15px 80px;
+		text-align: center;
+	}
+
+	.contact-para {
+		font-size: 1.3em;
+	}
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+
+	.main-header {
+		background-color: #f3ebfa;
+	}
+
+	.name {
+		float: left;
+		padding-left: 30px;
+	}
+
+	.header-nav-list {
+		float: right;
+		margin-top: 20px;
+	}
+
+	.banner {
+		margin-top: 30px;		
+	}
+
+	.about-me {
+		padding-top: 60px;
+		padding-right: 0;
+		text-align: left;
+	}
+
+	.container-main {
+		background-color: #f0f0f0;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.portfolio {
+		margin-top: -15px;
+	}
+
+	.projects {
+		background-color: #fff;
+	}
+
+	.container-project {
+		display: inline-block;
+		padding: 8px 6px;
+		width: 33%;
+	}
+
+	.bg-change {
+		display: none;
+	}
+
+	.skills {
+		background-color: #fff;
+	}
+}
+
