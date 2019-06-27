@@ -8,6 +8,11 @@
 	box-sizing: border-box; /* NEED TO RESEARCH THIS!!! */
 }
 
+html {
+	margin: 0 auto;
+	max-width: 1366px;
+}
+
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1.6;
