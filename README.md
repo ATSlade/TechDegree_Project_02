@@ -4,7 +4,7 @@ Treehouse FEWD Techdegree
 
 Notes:
 * Markup/Code successfully validated.
-* Profile pic, location pic and links do not display or function properly in Edge. 
+* Post-peer review, I made minor changes (font-size) to "skills" section.
 
 Attempting "Exceeds Expectations"
 * Skills section added
