@@ -10,4 +10,4 @@ Attempting "Exceeds Expectations"
 * Skills section added
 * Background color added (header)
 * Additional styling (borders on profile pic and project imgs) and hover states (on nav links)
-* <nav> elements used
+* Added <nav> elements
