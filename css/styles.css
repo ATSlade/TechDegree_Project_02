@@ -11,6 +11,7 @@
 html {
 	margin: 0 auto;
 	max-width: 1366px;
+	min-width: 320px;
 }
 
 body {
@@ -96,12 +97,12 @@ img {
 }
 
 .skills {
-	padding: 15px 100px;
+	padding: 15px 50px;
 	text-align: center;
 }
 
 .skill-list {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 .container-project {
@@ -326,7 +327,7 @@ h2.project-name {
 		margin-top: -15px;
 	}
 
-	.projects {
+	.projects, .skills {
 		background-color: #fff;
 	}
 
@@ -340,8 +341,5 @@ h2.project-name {
 		display: none;
 	}
 
-	.skills {
-		background-color: #fff;
-	}
 }
 
